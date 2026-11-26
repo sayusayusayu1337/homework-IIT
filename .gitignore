@@ -1,0 +1,4 @@
+git_install.log
+__pycache__/
+*.pyc
+.venv/
