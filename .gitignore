@@ -1,4 +1,7 @@
 git_install.log
+gh_input.txt
+gh_out.txt
+gh_err.txt
 __pycache__/
 *.pyc
 .venv/
