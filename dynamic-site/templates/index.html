@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Динамический сайт — homework IIT</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="card">
+    <h1>Динамический сайт на Flask</h1>
+    <p class="greeting">{{ greeting }}</p>
+    <p>Страница сгенерирована сервером в <strong>{{ server_time }}</strong>.</p>
+    <p>Просмотров за время работы сервера: <strong>{{ visits }}</strong>.</p>
+
+    <form method="post">
+      <label for="name">Введите имя:</label>
+      <input id="name" name="name" type="text" placeholder="Например, Олег">
+      <button type="submit">Отправить</button>
+    </form>
+  </div>
+</body>
+</html>
